@@ -4827,8 +4827,13 @@ sup {
     }
 }
 
+#header-bg{
+    opacity: .75;
+    background: #000;
+    background-image: url("../img/ethereal.jpg");
+}
+
 #particles-js {
-    background: #1a222c;
     display: flex;
     vertical-align: bottom;
     width: 100%;
@@ -4844,22 +4849,25 @@ sup {
 }
 
 .header {
+    user-select:none;
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
+    text-shadow: 2px 2px #32496d;
 }
 
 .header .site-title {
     font-size: 50px;
     display: block;
     line-height: 1;
-    color: #fff
+    color: #fff;
+    text-shadow: 2px 2px #32496d;
 }
 
 @media only screen and (min-width:550px) {
@@ -4873,8 +4881,10 @@ sup {
     font-size: 20px;
     display: block;
     line-height: 1;
-    color: #fff;
-    margin-top: 10px
+    color: #FFF;
+    margin-top: 10px;
+    text-shadow: 2px 2px #32496d;
+
 }
 
 @media only screen and (min-width:550px) {
@@ -4891,7 +4901,8 @@ sup {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
-    margin: 10px
+    margin: 10px;
+    text-shadow: 2px 2px #32496d;
 }
 
 @media only screen and (min-width:550px) {
