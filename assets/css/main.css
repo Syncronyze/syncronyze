@@ -4830,6 +4830,8 @@ sup {
 #header-bg{
     background: #000;
     background-image: url("../img/ethereal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #particles-js {
@@ -4854,7 +4856,7 @@ sup {
     text-align: center;
     color: #FFF;
     position: absolute;
-    top: 74%;
+    top: calc(100% - 300px);
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
@@ -5021,7 +5023,49 @@ sup {
     margin: 5px auto
 }
 
-#projects {
+#contact h1{
+    margin-bottom:10px;
+}
+
+#contact p{
+    margin: 0;
+    text-align: center;
+}
+
+#contactform{
+    padding: 8px;
+}
+
+input.submit{
+    float:right;
+}
+
+#contactform input:not(.submit){
+    box-sizing: border-box;
+    border-radius: 5px;
+    display:block;
+    width:100%;
+    height: 2em;
+    padding: 6px;
+    border:1px solid grey;
+    margin-bottom:5px;
+}
+
+#contactform #email { 
+    float:right;
+}
+
+#contactform textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 8em;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+#projects, #contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -5031,8 +5075,13 @@ sup {
 }
 
 @media only screen and (min-width:550px) {
-    #projects {
+    #projects, #contact {
         width: 80%
+    }
+
+    #contactform input:not(.submit) {
+        display:inline;
+        width: 48%;
     }
 }
 
@@ -5060,13 +5109,21 @@ body {
     margin-right: 5px
 }
 
+.contents{
+    display: inline-block;
+}
+
+.contents h3, .contents-right h3{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
 @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
         width: 48%
-    }
-    .contents-right {
-        margin-top: -5%
     }
     .contents-right,
     .images-right {

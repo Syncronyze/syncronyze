@@ -1,0 +1,13 @@
+<div class="user-details">
+	<h1> Contact </h1>
+</div>
+<p>You can use this form, or email me directly at nick@syncronyze.net</p>
+<div id="contactform">
+	<form action="https://formspree.io/nick@syncronyze.net" method="POST">
+	    <input name="name" id="name" type="text" placeholder="Name"/>
+	    <input type="text" id="email" name="_replyto" placeholder="Email" />
+	    <textarea name="message" placeholder="Message"></textarea>
+	    <input type="hidden" name="_next" value="{{site.url}}?success=true" />
+	    <input class="submit project-link" type="submit"/>
+	</form>
+</div>
