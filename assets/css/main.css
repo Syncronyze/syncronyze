@@ -4828,7 +4828,6 @@ sup {
 }
 
 #header-bg{
-    opacity: .75;
     background: #000;
     background-image: url("../img/ethereal.jpg");
 }
@@ -4849,12 +4848,13 @@ sup {
 }
 
 .header {
+    white-space: nowrap;
     user-select:none;
     z-index: 1;
     text-align: center;
     color: #FFF;
     position: absolute;
-    top: 50%;
+    top: 74%;
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
@@ -4873,7 +4873,7 @@ sup {
 @media only screen and (min-width:550px) {
     .header .site-title {
         margin: 0;
-        font-size: 100px
+        font-size: 95px
     }
 }
 
