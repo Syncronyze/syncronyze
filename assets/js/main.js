@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 }, !1);
 
 function toggleDiv(divToToggle){
-	document.getElementById("finished-projects").style.visibility = "hidden";
-	document.getElementById("surf-projects").style.visibility = "hidden";
-	document.getElementById("demos").style.visibility = "hidden";
-	document.getElementById(divToToggle).style.visibility = "visible";
+	document.getElementById("finished-projects").style.display = "none";
+	document.getElementById("surf-projects").style.display = "none";
+	document.getElementById("demos").style.display = "none";
+	document.getElementById(divToToggle).style.display = "block";
 }
