@@ -9,13 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 }, !1);
 
 function toggleDiv(divToToggle){
-	var finproj = document.getElementById('finished-projects');
-	var surfproj = document.getElementById('surf-projects');
-	var demos = document.getElementById('demos');
-	var toshow = document.getElementById(divToToggle);
-
-	finproj.display.style = 'hidden';
-	surfproj.display.style = 'hidden';
-	demos.display.style = 'hidden';
-	toshow.display.style = 'block';
+	document.getElementById('finished-projects').display.style = 'hidden';
+	document.getElementById('surf-projects').display.style = 'hidden';
+	document.getElementById('demos').display.style = 'hidden';
+	document.getElementById(divToToggle).display.style = 'block';
 }
